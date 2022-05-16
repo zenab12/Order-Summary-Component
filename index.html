@@ -10,28 +10,47 @@
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
+    @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&family=League+Spartan:wght@400;500;600;700&family=Outfit:wght@300;400;600&family=Red+Hat+Display:wght@500;700;900&display=swap');
+    :root{--Pale-blue: hsl(225, 100%, 94%);--Bright-blue: hsl(245, 75%, 52%);--Very-pale-blue: hsl(225, 100%, 98%);--Desaturated-blue: hsl(224, 23%, 55%);--Dark-blue: hsl(223, 47%, 23%)}
+    body{font-family: 'Red Hat Display', sans-serif;display:flex;justify-content:center;align-items:center;min-height: 100vh;position:relative}
+    body:before{content:"";display:block;background:url(images/pattern-background-desktop.svg)center no-repeat;top:0;left:0;width:100%;heght:400px;position:absolute}
+    main{grid-flow:1;flex-grow: 1;display: flex;justify-content: center;align-items: center;}
+    .card{display:flex;flex-direction:column;justify-content:space-between;gap:12px;border-radius:15px;width: 320px;}
+    .card header{background:url(images/illustration-hero.svg) center no-repeat ; background-size:cover;max-width:100%;}
+
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
 <body>
 
-  Order Summary
-
-  You can now listen to millions of songs, audiobooks, and podcasts on any 
-  device anywhere you like!
-
-  Annual Plan
-  $59.99/year
-
-  Change
-
-  Proceed to Payment
-  Cancel Order
+  <main>
+    <div class="card">
+      <div class="header">
+      </div>
+      <div class="mainContent">
+        <h1>  Order Summary </h1>
+        <p>  You can now listen to millions of songs, audiobooks, and podcasts on any 
+  device anywhere you like! </p>
+        <div class="plan">
+           <img src="images/icon-music.svg" alt="music">
+          <p> Annual Plan <span>$59.99/year</span></p>
+          <a href="#">Change</a>
+        
+        </div>
+        <div class="button">  Proceed to Payment </div>
+        <div>Cancle Order</div>
+      </div>
+    </div>
   
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+  </main>
+  <!--
+  <footer>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Your Name Here</a>.
+    </div>
+  </footer>
+  -->
 </body>
 </html>
