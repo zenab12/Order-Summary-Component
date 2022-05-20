@@ -13,14 +13,17 @@
     @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&family=League+Spartan:wght@400;500;600;700&family=Outfit:wght@300;400;600&family=Red+Hat+Display:wght@500;700;900&display=swap');
     :root{--Pale-blue: hsl(225, 100%, 94%);--Bright-blue: hsl(245, 75%, 52%);--Very-pale-blue: hsl(225, 100%, 98%);--Desaturated-blue: hsl(224, 23%, 55%);--Dark-blue: hsl(223, 47%, 23%)}
     body{font-family: 'Red Hat Display', sans-serif;display:flex;justify-content:center;align-items:center;min-height: 100vh;position:relative;margin: 0;background: var(--Pale-blue);}
-    body:before{content:"";display:block;background:url(images/pattern-background-desktop.svg)100% no-repeat;top:0;left:0;width:100%;height:400px;position:absolute;z-index: -1;background-size: cover;}
+    body:before{content:"";display:block;background:url(images/pattern-background-desktop.svg)100% no-repeat;top:0;left:0;width:100%;height:460px;position:absolute;z-index: -1;background-size: cover;}
     main{display: flex;justify-content: center;align-items: center;}
-    .card{display:flex;flex-direction:column;justify-content:space-between;gap:12px;border-radius:15px;width: 340px;background: white;}
-    .card .header{background:url(images/illustration-hero.svg) center no-repeat ; background-size:cover;max-width:100%;height: 200px;border-radius: 15px 15px 0px 0px;
+    .card{display:flex;flex-direction:column;justify-content:space-between;gap:12px;border-radius:15px;width: 400px;height:600px;background: white;}
+    .card .header{    background: url(images/illustration-hero.svg) no-repeat top/contain;
+    background-size: cover;
+    max-width: 100%;
+    height: 100%;border-radius: 15px 15px 0px 0px;
 }
 
     .mainContent h1{font-size: 25px;color:var(--Dark-blue);font-weight: 900; text-align: center; }
-    .mainContent > p{color: var(--Desaturated-blue);font-size: 15px;line-height: 25px;font-weight: 500;text-align: center; }
+    .mainContent > p{color: var(--Desaturated-blue);font-size: 15px;line-height: 25px;font-weight: 500;text-align: center; padding:0px 30px}
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
     .mainContent .plan {display:flex;place-items:center;place-content:center;justify-content: space-between;padding: 5px 20px;
@@ -41,17 +44,18 @@
     text-align: center;
     padding: 10px;
     background: var(--Bright-blue);
-    width: 16rem;
+    width: 80%;
     color: var(--Very-pale-blue);
     border-radius: 9px;
     box-shadow: 0px 8px 11px var(--Pale-blue);cursor: pointer;}
 
-   a.canclation{text-align: center;color: var(--Desaturated-blue);text-decoration: none;display: block;padding-bottom: 15px;}
+   a.canclation{text-align: center;color: var(--Desaturated-blue);text-decoration: none;display: block;padding-bottom: 45px;font-weight:700}
 
    @media(max-width: 775px)
    {
      body:before{content:"";display:block;background:url(images/pattern-background-mobile.svg)100% no-repeat;top:0;left:0;width:100%;height:400px;position:absolute;z-index: -1;background-size: cover;}
-   }
+     .card{width:340px;}
+    }
     @media(max-width: 390px)
    {
       .card{width: 320px;}
