@@ -14,7 +14,7 @@
     :root{--Pale-blue: hsl(225, 100%, 94%);--Bright-blue: hsl(245, 75%, 52%);--Very-pale-blue: hsl(225, 100%, 98%);--Desaturated-blue: hsl(224, 23%, 55%);--Dark-blue: hsl(223, 47%, 23%)}
     body{font-family: 'Red Hat Display', sans-serif;display:flex;justify-content:center;align-items:center;min-height: 100vh;position:relative;margin: 0;background: var(--Pale-blue);}
     body:before{content:"";display:block;background:url(images/pattern-background-desktop.svg)100% no-repeat;top:0;left:0;width:100%;height:400px;position:absolute;z-index: -1;background-size: cover;}
-    main{grid-flow:1;flex-grow: 1;display: flex;justify-content: center;align-items: center;}
+    main{display: flex;justify-content: center;align-items: center;}
     .card{display:flex;flex-direction:column;justify-content:space-between;gap:12px;border-radius:15px;width: 340px;background: white;}
     .card .header{background:url(images/illustration-hero.svg) center no-repeat ; background-size:cover;max-width:100%;height: 200px;border-radius: 15px 15px 0px 0px;
 }
@@ -28,7 +28,6 @@
     border-radius: 15px;margin: 0px 25px; }
     .mainContent .first{display: flex;
     justify-content: center;
-    felx-grow: 1;
     gap: 15px;align-items: center;}
     .mainContent img {height: 50px}
     .mainContent .first p{color: var(--Dark-blue);font-weight: 700;}
